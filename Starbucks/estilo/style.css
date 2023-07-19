@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    background: #006241;
+    color: #fff;
+}
+
+.header{
+    background: #006241;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 11px 10px 0px rgba(0,0,0,0.76);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__logo{
+    width: 40px;
+}
+
+.contenedor__header-nav, 
+.contenedor__header-usuario{
+    display: none;
+}
+
+.contenedor__header-usuario-mobile, i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contenedor__main-logo{
+    display: none;
+
+}
+
+.main{
+    width: 90%;
+    margin: 125px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__titulo{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.main__span-green{
+    color: #006241;
+}
+
+.main__parrafo{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.contenedor__main-texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+    background: #006241;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery__imagen{
+    width: 75%;
+    margin-top: 15px;
+}
+
+.contacto{
+    background: #0e0e0e;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__titulo{
+    color: #006241;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contacto__formulario{
+    background-color: #006241;
+    padding: 15px;
+    color: #fff;
+}
+
+.formulario__label{
+    font-size: 14px;
+}
+
+.contenedor__contacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.contenedor__contacto input::placeholder,
+.contenedor__contacto textarea::placeholder{
+    font-size: 14px;
+    color: #006241;
+    font-weight: bolder;
+
+}
+
+.contenedor__contacto input,
+.contenedor__contacto textarea{
+    padding: 5px;
+    border-radius: 7.5px;
+    border: 0;
+}
+
+.contenedor__contacto input:focus,
+.contenedor__contacto textarea:focus{
+    background: #000;
+    color: #fff ;
+}
+
+.contacto__boton{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 7.5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.contacto__boton:hover{
+    background: yellow;
+    border: 1px solid yellow;
+    
+}
+
+.cards{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor__cards{
+    background:#006241;
+    margin-top: 45px;
+    color: #fff;
+    position: relative;
+    width: 85%;
+}
+
+.cards__card-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards__titulo-yellow {
+    color: yellow;
+}
+
+.cards__card-texto{
+    padding: 25px 15px;
+}
+
+.cards__card-descripcion{
+    font-size: 15px;
+    margin: 7.5px 0 10px;
+}
+
+.cards__card-boton{
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 120px;
+    margin-top: 20px;
+    padding: 3px;
+    border-radius: 7.5px;
+    transition: all 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.cards__card-boton:hover{
+    background: yellow;
+    border: 1px solid yellow;
+}
+
+.contenedor__cards-boton{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0;
+}
+
+.contenedor__cards-boton input{
+    width: 100%;
+    margin: 7.5px 0 0;
+}
+
+.cards__card-descuento{
+    background-color: yellow;
+    width: 65px;
+    height: 65px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+
+.footer{
+    background: #000;
+    padding: 25px 15px;
+    width: 100%;
+}
+
+.contenedor__footer-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link-usuario{
+    color: #006241;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor__footer-social i{
+    color: #006241;
+    font-size: 22px;
+    width: 50px;
+
+}
+
+.contenedor__footer-social{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link-contacto{
+    color: #09aa00;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (min-width: 768px){
+    .contenedor__header-usuario-mobile{
+        display: none;
+    }
+
+    .contenedor__header-usuario{
+        display: block;
+    }
+
+    .contenedor__header-usuario i{
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .contenedor__header-nav{
+        display: block;
+    }
+
+    .navbar__link{
+        color: #fff;
+        text-decoration: none;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .contenedor__main-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .main__imagen{
+        width: 80%;
+    
+    }
+
+    .main{
+        display: flex;
+        padding: 15px 30px 30px;
+    }
+
+    .contenedor__main-texto{
+        width: 50%;
+    }
+
+    .contenedor__main-logo{
+        width: 50%;
+    }
+
+    .gallery{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .gallery__imagen{
+        width: 30%;
+        margin-top: 0;
+        
+}
+
+    .contacto__formulario{
+        width: 400px;
+    } 
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+
+    .contenedor__cards{
+        width: 40%;
+
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .contenedor__main-logo{
+        width: 400px;
+    }
+
+    .gallery__imagen{
+        width: 300px;
+        
+    }
+
+    .gallery{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contacto__formulario{
+        width: 800px;
+    }
+
+    .contenedor__contacto label{
+        font-size: 20px;
+    }
+
+    .contenedor__cards-boton{
+        flex-direction: row;
+}
+
+    .contenedor__cards-boton input{
+        margin-left: 7.5px;
+}
+
+    .contenedor__cards{
+        width: 400px;
+        height: 450px;
+        margin: 50px 25px;
+    }
+
+    .footer{
+        height: 200px;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1380px){
+    .contenedor__cards{
+        width: 500px;
+        height: 450px;
+        margin: 50px 25px;
+    }
+
+}
+
+@media (min-width: 1440px){
+
+    .contenedor__header-usuario i{
+        color: #fff;
+        font-size: 60px;
+    }
+
+    .main{
+        padding: 25px 30px 30px;
+    }
+
+    .contenedor__main-logo{
+        width: 600px;
+    }
+
+    .main__titulo{
+        font-size: 80px;
+    }
+
+    .main__parrafo{
+        font-size: 30px;
+    }
+
+    .gallery__imagen{
+        width: 400px;
+
+    }
+
+    .gallery{
+        justify-content: space-evenly;
+    }
+
+    .header__logo{
+        width: 80px;
+    }
+
+    .navbar__link{
+        font-size: 30px;
+    }
+
+    .contacto__formulario{
+        width: 800px;
+    } 
+
+    .contacto{
+        padding: 80px 15px;
+    }
+
+    .contenedor__cards{
+        width: 500px;
+    }
+
+    .gallery__imagen{
+        width: 400px;
+        margin-top: 15px;
+    }
+
+    .cards__card-boton{
+        font-size: 15px;
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 2560px){
+    .header__logo{
+        width: 100px;
+    }
+
+    .navbar__link{
+        font-size: 40px;
+    }
+
+    .contenedor__header-usuario i{
+        font-size: 100px;
+    }
+
+    .main{
+        display: flex;
+        padding:200px 30px 30px;
+    }
+
+    .contacto__formulario{
+        width: 1000px;
+    } 
+
+    .contacto__boton {
+        margin-top: 25px;
+        font-size: 50px;
+        
+} 
+
+    .contenedor__contacto label{
+        font-size: 40px;
+}
+
+    .contenedor__contacto input, textarea{
+
+        height: 100px;
+}
+
+    .contacto__titulo{
+        font-size: 90px;
+    }
+
+    .gallery__imagen{
+        width: 700px;
+    }
+
+    
+
+    .contenedor__cards {
+        height: 800px;
+        width: 900px;
+}
+
+    .cards__card-titulo{
+        font-size: 60px; ;
+    }
+
+    .cards__card-descripcion{
+        font-size: 30px;
+    }
+
+    .cards__card-boton{
+        font-size: 25px;
+        width: 500px;
+    }
+
+    .cards__card-descuento{
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+
+}
+    .contenedor__footer-login a{
+        font-size: 50px;
+
+    }
+
+    .contenedor__footer-social i{
+        font-size: 50px;
+        margin-left: 100px;
+
+    }
+
+    .contenedor__footer-contacto a{ 
+        font-size: 50px;
+    }
+}
